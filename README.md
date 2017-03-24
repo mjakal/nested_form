@@ -1,24 +1,3 @@
-# README
+# Nested form
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This project is based on Ryan Bates RailsCasts episode 196. I was able to get this working on Rails 5. I hope this will help others stuck with nested forms.
