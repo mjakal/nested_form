@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NestedForm</title>
+    <%= csrf_meta_tags %>
+
+    <!-- Windows crap -->
+    <%#= stylesheet_link_tag    'default', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%#= javascript_include_tag 'default', 'data-turbolinks-track': 'reload' %>
+
+    <!-- Normal server -->
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div id="container">
+      <% flash.each do |name, msg| %>
+        <%= content_tag :div, msg, id: "flash_#{name}" %>
+      <% end %>
+      <%= yield %>
+    </div>
+  </body>
+</html>
